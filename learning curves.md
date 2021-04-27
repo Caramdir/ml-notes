@@ -1,0 +1,3 @@
+# Learning curves
+
+Plotting the cost (or other [[performance measure]]) against the number of training examples. This is usally done with the cost for the used subset of the [[training set]] and the full [[cross-validation set]]. The trajectory of the curves indicates whether training with more examples has benefits (so that a larger data set should be produced), or whether it is better to improve the model (e.g. because of [[variance|high variance]]).
