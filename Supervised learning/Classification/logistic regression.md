@@ -13,7 +13,7 @@ and we predict $y = 1$ if $h_\theta(x) \ge 0.5$. Equivalently, this is the case 
 
 The hyperplane $\theta^Tx = 0$ is called the *decision boundary*. Similar to [[polynomial regression]], we can add powers and other functions in the features to obtain more complex decision boundaries.
 
-Using squarred-error as cost function gives a non-convex optimization problem. One uses the following cost function instead:
+Using squared-error as cost function gives a non-convex optimization problem. One uses the following cost function instead:
 $$
 	J(\theta) =
 	\frac1m \sum_{i=1}^m \operatorname{Cost}\bigl(h_\theta(x^{(i)}),\, y^{(i)}\bigr), 
