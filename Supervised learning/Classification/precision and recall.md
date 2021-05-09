@@ -3,7 +3,7 @@ alias: precision, recall, true positive, false positive, true negative, false ne
 ---
 # Precision and recall
 
-If in a [[00 - classification problem]] some classes are more common than others, then [[classification accuracy]] is not a good measure for performance. For example the model might just never predict the uncommon class.
+If in a [[00 - classification problem|classification problem]] some classes are more common than others, then [[classification accuracy]] is not a good measure for performance. For example the model might just never predict the uncommon class.
 
 Let $y=1$ be the rare class we want to predict. 
 

@@ -70,5 +70,5 @@ and predicts $1$ if and only if $\theta^Tf \ge 0$.
 	- $n$ large vs. $m$: use logistic regression or SVM without kernel
 	- $n$ small, $m$ intermediate: Gaussian kernel
 	- $n$ small, $m$ large: Gaussian kernel might be too slow. If so, create/add more features and use logistic regression or SVM without kernel
-	- note: [[neural network|neural networks]] likely to work well for most of these settings, but may be slower to train.
+	- note: [[00 - neural networks|neural networks]] are likely to work well for most of these settings, but may be slower to train.
 - Remark: SVMs have convex optimization problems.

@@ -13,6 +13,7 @@ The output variable can only take on two possible values, usually normalized to 
 
 - [[logistic regression]]
 - [[support vector machine|Support vector machine]]
+- [[00 - neural networks|neural network]]
 
 ## Multiclass classification problems
 
