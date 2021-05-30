@@ -3,7 +3,7 @@ alias: neural network, neural networks
 ---
 # Neural networks
 
-Neural networks consist of a number of *layers*, each in turn consisting of several *nodes*. The output of the nodes of one layer serves as the input of nodes to the next layer.
+Neural networks consist of a number of *layers*, each in turn consisting of several *nodes* or *units*. The output of the nodes of one layer serves as the input of nodes to the next layer.
 
 [TODO: Add picture.]
 
@@ -87,7 +87,7 @@ $$
 \begin{aligned}
 	\frac{\partial J}{\partial Z^{[\ell]}} & = \frac{\partial J}{\partial A^{[\ell]}} * g^{[\ell]\prime}\bigl(\frac{\partial J}{\partial Z^{[\ell]}}\bigr) \\
 	\frac{\partial J}{\partial W^{[\ell]}} & =
-	\frac1m * \frac{\partial \mathcal L}{\partial Z^{[\ell]}} \mathbin{@} A^{[\ell-1]T} \\
+	\frac1m * \frac{\partial J}{\partial Z^{[\ell]}} \mathbin{@} A^{[\ell-1]T} \\
 	\frac{\partial J}{\partial b^{[\ell]}} &= \frac1m * \mathrm{np.sum}\bigl(\frac{\partial J}{\partial Z^{[\ell]}},\, \mathrm{axis}=1\bigr) \\
 	\frac{\partial J}{\partial A^{[\ell-1]}} &= W^{[\ell]T} \mathbin@ \frac{\partial J}{\partial Z^{[\ell]}}
 \end{aligned}
@@ -96,13 +96,19 @@ This process is called *backpropagation.* According to [[Andrew Ng]], the partia
 
 We note that only the computation step for $\frac{\partial J}{\partial A^{[L]}}$ directly depends on the chosen cost function. We further note that for efficient computation it is necessary to cache $A^{[\ell]}$ and (depending on the [[nonlinearity]]) $Z^{[\ell]}$ during forward-propagation for use in back-propagation.
 
-After back-propagation, the parameters are then updated with the chosen [[00 - optimization algorithms|optimization algorithm]]. Before the first training step, the weights $W^{[\ell]}$ have to be initialized with (small) random numbers, as otherwise all nodes in each layer will always have the same weights after each training step. This is called *symmetry breaking*.
+After back-propagation, the parameters are then updated with the chosen [[00 - optimization algorithms|optimization algorithm]]. Before the first training step, the weights $W^{[\ell]}$ have to be initialized with (small) random numbers, as otherwise all nodes in each layer will always have the same weights after each training step. This is called *symmetry breaking*. See [[vanishing or exploding gradients]] for different initialization techniques used in deep networks.
 
 ## Specific applications
 
 - [[Supervised learning/Neural Networks/binary classification|binary classification]]
 - [[Supervised learning/Neural Networks/multi-class classification|multi-class classification]]
 - [[Supervised learning/Neural Networks/multi-task classification|multi-task classification]]
+
+## Further considerations
+
+- To avoid [[variance]] problems, it may be necessary to add [[Supervised learning/Neural Networks/regularization|regularization]].
+- One should use [[feature scaling and mean normalization]] to speed up gradient descent.
+- [[vanishing or exploding gradients]]
 
 ## Advanced neural networks
 - [[Convolutional neural network]]
