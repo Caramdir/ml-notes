@@ -1,3 +1,6 @@
+---
+alias: mini-batch
+---
 # Mini-batch gradient descent
 
 Update the [[parameters]] after computing only a portion of the training data.

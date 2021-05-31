@@ -1,3 +1,6 @@
+---
+alias: dropout regularization
+---
 # Regularization
 
 To avoid [[variance|high variance]] problems, it may be necessary to regularize the [[00 - neural networks|neural network]].
