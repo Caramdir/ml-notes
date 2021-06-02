@@ -109,6 +109,7 @@ After back-propagation, the parameters are then updated with the chosen [[00 - o
 - To avoid [[variance]] problems, it may be necessary to add [[Supervised learning/Neural Networks/regularization|regularization]].
 - One should use [[feature scaling and mean normalization]] to speed up gradient descent.
 - [[vanishing or exploding gradients]]
+- [[batch normalization|Batch normalization]] may improve learning performance.
 
 ## Advanced neural networks
 - [[Convolutional neural network]]

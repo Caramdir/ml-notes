@@ -1,5 +1,5 @@
 ---
-alias: performance measures
+alias: performance measures, satisficing, satisficing metric, optimizing metric, satisficing and optimizing metrics
 ---
 # Performance measures
 
@@ -10,3 +10,7 @@ Possible performance measures include:
 - [[classification accuracy]]
 - [[precision and recall]]
 - [[F1 score|$F_1$ score]]
+
+One should distinguish between *satisficing* and *optimizing* metrics. That is, one maximizes/minimizes the optimizing metrics,subject to the satisficing metrics being within certain bounds. Ideally one only has one optimizing metric
+
+For example, accuracy could be an optimizing metric, while running time could be a satisficing one.
