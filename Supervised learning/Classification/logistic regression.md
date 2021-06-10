@@ -24,7 +24,7 @@ $$
 $$
 As $y$ is always either $0$ or $1$, only one of the summands in $\operatorname{Cost}$ is nonzero for any given training example. The logarithm penalizes big errors in likelyhood much stronger than small ones.
 
-This is related to [[maximum likelyhood estimation]] (source?).
+The cost function is exactly the [[cross-entropy]] between the observed distribution and the one represented by the model (with parameter $\theta$). Thus minimizing the cost function is [[likelihood function|maximum likelihood estimation]] for $\theta$.
 
 The partial derivatives of $J$ are
 $$

@@ -15,7 +15,7 @@ $$
 $$
 This is the *softmax activiation function* (as compared to *hardmax*, which outputs $1$ for the biggest component and $0$ elsewhere). When $C=1$ this reduces to a [[logistic function]].
 
-The corresponding loss function is
+The corresponding loss function is [[cross-entropy]],
 $$
 	\mathcal{L}(\hat y, y) = -\sum_{j=1}^C y_j \log \hat y_j.
 $$
