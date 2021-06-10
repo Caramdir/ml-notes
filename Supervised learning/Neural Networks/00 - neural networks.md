@@ -112,4 +112,4 @@ After back-propagation, the parameters are then updated with the chosen [[00 - o
 - [[batch normalization|Batch normalization]] may improve learning performance.
 
 ## Advanced neural networks
-- [[Convolutional neural network]]
+- [[convolutional neural network]]
