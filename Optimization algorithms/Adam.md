@@ -1,5 +1,5 @@
 # Adam
-The *Adam* (short for *adaptive moment estimation*) optimization algorithm is a combination of [[gradient descent with momentum]] and [[RMSProp]]. [TODO: reference]
+The *Adam* (short for *adaptive moment estimation*) optimization algorithm is a combination of [[gradient descent with momentum]] and [[RMSProp]].  [[@kingmaAdamMethodStochastic2017]]
 
 Thus, after initializing $v_{\nabla J} = s_{\nabla J} = 0$, on each iteration $t$ the following steps are 
 (where the squaring and root operations are component-wise):
