@@ -12,11 +12,11 @@ We use the [[notation for learning algorithms]].
 Note: This algorithm is taken from the [[Coursera course on machine learning]] and requires a proof. Use the below details with caution.
 
 0. Perform [[feature scaling and mean normalization|mean normalization]] (so that we only need to consider surfaces going through the origin) and [[feature scaling and mean normalization|feature scaling]].
-1. Compute the covariance matrix
+1. Compute the [[covariance|covariance matrix]]
 	$$
 	\Sigma = \frac1m \sum_{i=1}^m x^{(i)}(x^{(i)})^T = \frac1m XX^T \in \mathbb{R}^{n \times n}.
 	$$
-1. Compute the eigenvectors of $\Sigma$. Since $\Sigma$ is positive definite, one can do that by computing the singular value decomposition of $\Sigma$: $$\Sigma = USV^T.$$ Label the columns of $U = (u^{(1)} \cdots u^{(n)})$ and take the submatrix $U_{red} = (u^{(1)} \cdots u^{(k)})$ consisting of the first $k$ columns.
+1. Compute the eigenvectors of $\Sigma$. Since $\Sigma$ is positive definite, one can do that by computing the [[singular value decomposition]] of $\Sigma$: $$\Sigma = USV^T.$$ Label the columns of $U = (u^{(1)} \cdots u^{(n)})$ and take the submatrix $U_{red} = (u^{(1)} \cdots u^{(k)})$ consisting of the first $k$ columns.
 2. The new features are given by $z^{(i)} = U_{red}x^{(i)} \in\mathbb{R}^k$.
 
 We note that the in terms of the original feature space, the obtained projection of $x$ is $x_{approx} = U_{red} z \in \mathbb{R}^n$.

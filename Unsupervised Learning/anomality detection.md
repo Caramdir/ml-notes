@@ -39,7 +39,7 @@ Dropping the independence assumption, one can model the probability with a multi
 $$
 	p(x) = \frac1{(2\pi)^{n/2}|\Sigma|^{\frac12}} \exp\bigl(-\frac12 (x-\mu)^T\sigma^{-1}(x-\mu)\bigr),
 $$
-where $\mu \in \mathbb{R}^n$ and $\Sigma \in \mathbb{R}^{n \times n}$. The entries of the *covariance matrix* $\Sigma$ determine how much any two given features (anti)correlate.
+where $\mu \in \mathbb{R}^n$ and $\Sigma \in \mathbb{R}^{n \times n}$. The entries of the [[covariance|covariance matrix]] $\Sigma$ determine how much any two given features (anti)correlate.
 
 The parameters are estimated as
 $$

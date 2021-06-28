@@ -45,7 +45,7 @@ Since $\nabla J(\theta) = 0$ is a linear system of equations in the parameters $
 $$
 	\theta = (XX^T)^{-1}XY^T.
 $$
-If $m > n$ and the features are linearly independent, then $XX^T$ is always invertible [proof?]. Otherwise, one can use the pseudo-inverse.
+If $m > n$ and the features are linearly independent, then $XX^T$ is always invertible [proof?]. Otherwise, one can use the [[singular value decomposition|pseudo-inverse]].
 
 [[Feature scaling and mean normalization]] is not necessary when using the normal equation formula for computing linear regression.
 
