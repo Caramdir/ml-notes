@@ -5,7 +5,7 @@ alias: MAP, posterior predictive distribution
 
 Given an observation $x$ from a random variable, the *maximum a posterior estimation* (or *MAP*) is a Bayesian way to estimate a parameter $\theta$ for the distribution of $\theta$.
 
-One starts with *prior distribution* $p(\theta)$ for $\theta$ and uses Bayes' rule to update it based on the observation:
+One starts with *prior distribution* $p(\theta)$ for $\theta$ and uses [[Bayes' theorem|Bayes' rule]] to update it based on the observation:
 $$
 	p(\theta|x) = \frac{p(\theta) p(x | \theta)}{p(x)}.
 $$

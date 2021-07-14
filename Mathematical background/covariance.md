@@ -8,7 +8,7 @@ The *covariance* of two [[random variables]] $X$ and $Y$ is
 $$
 	\operatorname{Cov}[X, Y] = \mathbb E\bigl[(X - \mathbb{E}[X])(Y - \mathbb E[Y])\bigr] = \mathbb E[XY] - \mathbb E[X]\mathbb E[Y].
 $$
-The covariance measures the degree to which $X$ and $Y$ are linearly related. Note that the magnitude of the covariance depends on the magnitudes of $X$ and $Y$. A normalized version is [[correlation]].
+The covariance measures the degree to which $X$ and $Y$ are linearly related. Note that the magnitude of the covariance depends on the magnitudes of $X$ and $Y$. A normalized version is [[Pearson correlation coefficient|correlation]].
 ![[170px-Covariance_trends.svg.png|Source: Wikipedia]]
 
 If $X = Y$, then $\operatorname{Cov}[X, X] = \mathbb \sigma_X^2$ is the [[Mathematical background/variance|variance]] of $X$.
