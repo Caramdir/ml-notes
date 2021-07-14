@@ -46,3 +46,9 @@ Common choices of parameters are $f=2$, $s=2$ and $f=3$, $s=2$. Usually no paddi
 ## Fully connected layer
 
 A *fully connected layer* or *dense layer* is affine linear layer as described in [[00 - neural networks]], i.e. one that flattens the input into an array if necessary and then applies an affine linear function on the whole input at once. They are usually used at the end of a ConvNet before applying say a [[multi-class classification|softmax]] output layer.
+
+## Case studies
+
+- [[LeNet-5]]
+- [[AlexNet]]
+- [[VGG-16]]
